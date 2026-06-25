@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Krishna Sweets | Traditional Indian Sweets in Thiruvarur</title>
+<meta name="description" content="Krishna Sweets in Thiruvarur, Tamil Nadu — traditional Indian mithai made fresh daily. Gulab Jamun, Laddu, Rasgulla and more from the counter.">
+<meta name="theme-color" content="#7A1F2B">
+<meta property="og:title" content="Krishna Sweets — Traditional Indian Sweets">
+<meta property="og:description" content="Fresh, handmade mithai in Thiruvarur, Tamil Nadu.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8D%AC%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;500;600;700&family=Rozha+One&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Store",
+  "name": "Krishna Sweets",
+  "telephone": "1800 890 2202",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "QJF8+WWM SS Complex, Vilamal",
+    "addressLocality": "Thiruvarur",
+    "addressRegion": "Tamil Nadu",
+    "postalCode": "610004",
+    "addressCountry": "IN"
+  },
+  "openingHours": "Mo-Su 10:00-21:00"
+}
+</script>
+
+<style>
+  :root{
+    --maroon:#7A1F2B;
+    --maroon-deep:#4A1019;
+    --gold:#C99A2E;
+    --gold-light:#E8C878;
+    --cream:#FFF8EC;
+    --cream-soft:#FFF1DC;
+    --ink:#2B1810;
+    --ink-soft:#5B4438;
+    --teal:#0E5C56;
+    --shadow:0 12px 30px -10px rgba(74,16,25,0.22);
+    --radius:14px;
+    --max-width:1140px;
+  }
+
+  *{ margin:0; padding:0; box-sizing:border-box; }
+
+  html{ scroll-behavior:smooth; }
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+  }
+
+  body{
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Hind Madurai', Arial, sans-serif;
+    line-height:1.65;
+  }
+
+  h1,h2,h3,.kr-logo{ font-family:'Rozha One', serif; font-weight:400; }
+
+  img{ display:block; max-width:100%; }
+
+  a{ color:inherit; }
+
+  section[id]{ scroll-margin-top:88px; }
+
+  /* Skip link */
+  .kr-skip{
+    position:absolute; left:-999px; top:auto;
+    background:var(--gold); color:var(--maroon-deep);
+    padding:10px 16px; border-radius:6px; font-weight:700;
+    text-decoration:none; z-index:200;
+  }
+  .kr-skip:focus{ left:16px; top:16px; }
+
+  a:focus-visible, button:focus-visible{
+    outline:3px solid var(--teal);
+    outline-offset:3px;
+    border-radius:4px;
+  }
+
+  /* SVG kolam motif */
+  .kr-dot{ fill:var(--gold); }
+  .kr-dot--light{ fill:var(--gold-light); }
+  .kr-loop{ fill:none; stroke:var(--gold); stroke-width:1.5; stroke-linecap:round; }
+  .kr-loop--light{ stroke:var(--gold-light); }
+
+  .kr-kolam-strip{ display:block; width:100%; height:36px; }
+  .kr-kolam-strip--animated .kr-loop{
+    stroke-dasharray:140;
+    stroke-dashoffset:140;
+    animation:kr-draw 2.4s ease-out forwards;
+  }
+  @keyframes kr-draw{ to{ stroke-dashoffset:0; } }
+  @media (prefers-reduced-motion: reduce){
+    .kr-kolam-strip--animated .kr-loop{ animation:none; stroke-dashoffset:0; }
+  }
+
+  /* Header / nav */
+  .kr-header{
+    position:sticky; top:0; z-index:50;
+    background:var(--cream);
+    border-bottom:1px solid rgba(122,31,43,0.14);
+  }
+  .kr-header__inner{
+    max-width:var(--max-width); margin:0 auto;
+    display:flex; align-items:center; justify-content:space-between;
+    gap:16px; padding:14px 24px; flex-wrap:wrap;
+  }
+  .kr-logo{
+    display:flex; align-items:center; gap:8px;
+    font-size:1.4rem; color:var(--maroon);
+    text-decoration:none;
+  }
+  .kr-logo__mark{ font-size:1.5rem; }
+  .kr-nav{ display:flex; align-items:center; gap:26px; flex-wrap:wrap; }
+  .kr-nav a{
+    text-decoration:none; font-weight:600; font-size:0.95rem;
+    color:var(--ink); position:relative; padding:4px 2px;
+  }
+  .kr-nav a::after{
+    content:""; position:absolute; left:0; right:0; bottom:-3px;
+    height:2px; background:var(--gold);
+    transform:scaleX(0); transform-origin:left;
+    transition:transform .25s ease;
+  }
+  .kr-nav a:hover::after, .kr-nav a:focus-visible::after{ transform:scaleX(1); }
+  .kr-call{
+    display:inline-flex; align-items:center; gap:6px;
+    background:var(--maroon); color:var(--cream);
+    padding:9px 18px; border-radius:999px;
+    font-weight:600; font-size:0.9rem; text-decoration:none;
+    transition:background .2s ease, transform .2s ease;
+  }
+  .kr-call:hover{ background:var(--maroon-deep); transform:translateY(-1px); }
+
+  @media (max-width:560px){
+    .kr-header__inner{ justify-content:center; text-align:center; }
+    .kr-nav{ width:100%; justify-content:center; }
+  }
+
+  /* Hero */
+  .kr-hero{
+    position:relative;
+    background:linear-gradient(160deg, var(--maroon) 0%, var(--maroon-deep) 100%);
+    color:var(--cream);
+    padding:88px 24px 0;
+    text-align:center;
+    overflow:hidden;
+  }
+  .kr-hero__ornament{
+    position:absolute; inset:0;
+    opacity:0.10; pointer-events:none;
+  }
+  .kr-hero__content{
+    position:relative; max-width:700px; margin:0 auto;
+    padding-bottom:56px;
+  }
+  .kr-eyebrow{
+    display:inline-block; font-family:'Hind Madurai', sans-serif;
+    font-weight:700; font-size:0.78rem; letter-spacing:0.18em;
+    text-transform:uppercase; color:var(--gold-light);
+    margin-bottom:18px;
+  }
+  .kr-hero h1{
+    font-size:clamp(2.3rem, 5.5vw, 3.7rem);
+    line-height:1.15; margin-bottom:18px;
+  }
+  .kr-hero p{
+    font-size:clamp(1.05rem, 2vw, 1.2rem);
+    color:rgba(255,248,236,0.88);
+    max-width:540px; margin:0 auto;
+  }
+  .kr-btn{
+    display:inline-flex; align-items:center; gap:8px;
+    margin-top:30px;
+    background:linear-gradient(135deg, var(--gold-light), var(--gold));
+    color:var(--maroon-deep); font-weight:700;
+    padding:14px 30px; border-radius:999px;
+    text-decoration:none;
+    box-shadow:0 10px 24px -8px rgba(0,0,0,0.35);
+    transition:transform .2s ease, box-shadow .2s ease;
+  }
+  .kr-btn:hover{ transform:translateY(-2px); box-shadow:0 14px 28px -8px rgba(0,0,0,0.42); }
+
+  /* Sections */
+  .kr-section{
+    padding:70px 24px;
+    max-width:var(--max-width);
+    margin:0 auto;
+  }
+  .kr-section__head{
+    text-align:center; max-width:560px; margin:0 auto 44px;
+  }
+  .kr-section__head h2{
+    font-size:clamp(1.8rem, 3.5vw, 2.4rem);
+    color:var(--maroon); margin-bottom:10px;
+  }
+  .kr-section__head p{ color:var(--ink-soft); }
+
+  /* Product cards */
+  .kr-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:28px;
+  }
+  .kr-card{
+    background:#fff; border-radius:var(--radius);
+    overflow:hidden; box-shadow:var(--shadow);
+    text-align:left;
+    transition:transform .25s ease, box-shadow .25s ease;
+  }
+  .kr-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 18px 36px -12px rgba(74,16,25,0.3);
+  }
+  .kr-card__media{ aspect-ratio:4/3; overflow:hidden; background:var(--cream-soft); }
+  .kr-card__media img{ width:100%; height:100%; object-fit:cover; transition:transform .4s ease; }
+  .kr-card:hover .kr-card__media img{ transform:scale(1.06); }
+  .kr-card__body{ padding:18px 20px 22px; }
+  .kr-card__body h3{ font-size:1.25rem; color:var(--maroon-deep); margin-bottom:6px; }
+  .kr-desc{ font-size:0.92rem; color:var(--ink-soft); margin-bottom:14px; min-height:2.6em; }
+  .kr-price{
+    display:inline-block; font-weight:700; color:var(--maroon);
+    background:var(--cream-soft); padding:6px 14px;
+    border-radius:999px; font-size:0.9rem;
+  }
+
+  /* Contact */
+  .kr-contact{ background:#fff; }
+  .kr-contact-grid{
+    display:grid; grid-template-columns:1fr 1fr; gap:24px;
+    margin-top:24px;
+  }
+  @media (max-width:680px){
+    .kr-contact-grid{ grid-template-columns:1fr; }
+  }
+  .kr-contact-card{
+    background:var(--cream-soft); border-radius:var(--radius);
+    padding:26px; text-align:left;
+  }
+  .kr-contact-card h4{
+    font-family:'Hind Madurai', sans-serif;
+    text-transform:uppercase; letter-spacing:0.08em;
+    font-size:0.8rem; color:var(--maroon); font-weight:700;
+    margin-bottom:12px;
+  }
+  .kr-contact-card p{ color:var(--ink); margin-bottom:4px; }
+  .kr-link-btn{
+    display:inline-flex; align-items:center; gap:6px;
+    margin-top:16px; font-weight:700; text-decoration:none;
+    color:var(--maroon); border-bottom:2px solid var(--gold);
+    padding-bottom:2px; transition:color .2s ease;
+  }
+  .kr-link-btn:hover{ color:var(--maroon-deep); }
+
+  /* Footer */
+  .kr-footer{
+    background:var(--maroon-deep); color:var(--cream);
+    text-align:center; padding:8px 24px 26px;
+  }
+  .kr-footer p{ margin-top:6px; }
+  .kr-footer small{ opacity:0.75; display:block; margin-top:4px; }
+</style>
+</head>
+
+<body>
+
+<a href="#main" class="kr-skip">Skip to content</a>
+
+<header class="kr-header">
+  <div class="kr-header__inner">
+    <a href="#home" class="kr-logo">
+      <span class="kr-logo__mark" aria-hidden="true">🍬</span>
+      Krishna Sweets
+    </a>
+    <nav class="kr-nav" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="tel:18008902202" class="kr-call">📞 1800 890 2202</a>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="kr-hero" id="home">
+  <svg class="kr-hero__ornament" viewBox="0 0 600 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <defs>
+      <pattern id="kolamHero" width="80" height="80" patternUnits="userSpaceOnUse">
+        <circle class="kr-dot--light" cx="40" cy="40" r="3"></circle>
+        <path class="kr-loop kr-loop--light" d="M0,40 C20,10 60,70 80,40"></path>
+        <path class="kr-loop kr-loop--light" d="M40,0 C10,20 70,60 40,80"></path>
+      </pattern>
+    </defs>
+    <rect width="600" height="600" fill="url(#kolamHero)"></rect>
+  </svg>
+
+  <div class="kr-hero__content">
+    <span class="kr-eyebrow">Traditional Mithai, Made Fresh</span>
+    <h1>Welcome to Krishna Sweets</h1>
+    <p>Handmade sweets rooted in tradition — crafted fresh and served with warmth, the way mithai should be.</p>
+    <a href="#products" class="kr-btn">View Our Sweets →</a>
+  </div>
+
+  <svg class="kr-kolam-strip kr-kolam-strip--animated" viewBox="0 0 600 36" preserveAspectRatio="none" aria-hidden="true">
+    <defs>
+      <pattern id="kolamDividerTop" width="60" height="36" patternUnits="userSpaceOnUse">
+        <circle class="kr-dot--light" cx="30" cy="18" r="2.4"></circle>
+        <path class="kr-loop kr-loop--light" d="M0,18 C15,2 45,34 60,18"></path>
+      </pattern>
+    </defs>
+    <rect width="600" height="36" fill="url(#kolamDividerTop)"></rect>
+  </svg>
+</section>
+
+<section class="kr-section" id="products">
+  <div class="kr-section__head">
+    <span class="kr-eyebrow" style="color:var(--gold);">Our Menu</span>
+    <h2>Our Popular Sweets</h2>
+    <p>A few favourites from the counter — ask us about the full range in store.</p>
+  </div>
+
+  <div class="kr-grid">
+
+    <article class="kr-card">
+      <div class="kr-card__media">
+        <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500" alt="Golden gulab jamun sweets soaked in syrup, served in a bowl" loading="lazy">
+      </div>
+      <div class="kr-card__body">
+        <h3>Gulab Jamun</h3>
+        <p class="kr-desc">Soft milk-dumplings simmered in rose and cardamom syrup.</p>
+        <span class="kr-price">₹250 / Kg</span>
+      </div>
+    </article>
+
+    <article class="kr-card">
+      <div class="kr-card__media">
+        <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=500" alt="Round besan laddus garnished with nuts, stacked on a plate" loading="lazy">
+      </div>
+      <div class="kr-card__body">
+        <h3>Laddu</h3>
+        <p class="kr-desc">Rolled besan and ghee, finished with toasted nuts.</p>
+        <span class="kr-price">₹300 / Kg</span>
+      </div>
+    </article>
+
+    <article class="kr-card">
+      <div class="kr-card__media">
+        <img src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=500" alt="Spongy white rasgulla balls served in light sugar syrup" loading="lazy">
+      </div>
+      <div class="kr-card__body">
+        <h3>Rasgulla</h3>
+        <p class="kr-desc">Spongy cheese balls steeped in light, delicate sugar syrup.</p>
+        <span class="kr-price">₹280 / Kg</span>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section class="kr-contact" id="contact">
+  <div class="kr-section">
+    <div class="kr-section__head">
+      <span class="kr-eyebrow" style="color:var(--gold);">Visit Us</span>
+      <h2>Contact Us</h2>
+      <p>Drop by the store, or reach out before you visit.</p>
+    </div>
+
+    <div class="kr-contact-grid">
+      <div class="kr-contact-card">
+        <h4>Address</h4>
+        <p>QJF8+WWM SS Complex, Vilamal,</p>
+        <p>Thiruvarur, Tamil Nadu 610004</p>
+        <a class="kr-link-btn" href="https://www.google.com/maps/search/?api=1&amp;query=QJF8%2BWWM+SS+COMPLEX%2C+Vilamal%2C+Thiruvarur%2C+Tamil+Nadu+610004" target="_blank" rel="noopener">Get Directions →</a>
+      </div>
+
+      <div class="kr-contact-card">
+        <h4>Phone &amp; Hours</h4>
+        <p>📞 1800 890 2202</p>
+        <p>🕒 10:00 AM – 9:00 PM, daily</p>
+        <a class="kr-link-btn" href="tel:18008902202">Call Now →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="kr-footer">
+  <svg class="kr-kolam-strip" viewBox="0 0 600 30" preserveAspectRatio="none" aria-hidden="true">
+    <defs>
+      <pattern id="kolamFooter" width="50" height="30" patternUnits="userSpaceOnUse">
+        <circle class="kr-dot" cx="25" cy="15" r="2"></circle>
+        <path class="kr-loop" d="M0,15 C12,2 38,28 50,15"></path>
+      </pattern>
+    </defs>
+    <rect width="600" height="30" fill="url(#kolamFooter)"></rect>
+  </svg>
+  <p>© 2026 Krishna Sweets · All Rights Reserved</p>
+  <small>Sweetness, the traditional way.</small>
+</footer>
+
+</body>
+</html>
